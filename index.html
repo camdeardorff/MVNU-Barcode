@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>ID Barcode Generator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./local/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./local/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+        <main role="main" class="container">
+
+            <div class="jumbotron">
+                <h1 class="display-3">ID Barcode Generator</h1>
+                <p class="lead">Forget your ID? Generate the same barcode that's on your student ID. </p>
+
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="number" placeholder="ID Number" id="id-field" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" onkeyup="generateCode()">
+                        <button type="button" class="btn btn-primary" onclick="printBarcode()">Print</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="print-display">
+                <svg id="barcode"></svg>
+            </div>
+
+        </main>
+    </div>
+
+
+    <footer class="footer container">
+        <p class="tag-line">Made with ❤️ at MVNU</p>
+        <p id="copyright">&copy; Cameron Deardorff 2017</p>
+    </footer>
+</body>
+
+<!-- barcode generating source -->
+<script src="./local/lib/jsBarcode/JsBarcode.code39.min.js"></script>
+<script src="./local/js/MVNU-Barcode.js"></script>
+
+</html>

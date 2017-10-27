@@ -1,0 +1,50 @@
+html,
+body {
+    height: 100%;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 150px;
+}
+
+.footer {
+    position: relative;
+    margin-top: -92px;
+    height: 100px;
+    clear: both;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    margin-top: 32px;
+}
+
+#barcode {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.tag-line {
+    display: inline-block;
+}
+
+#copyright {
+    display: inline-block;
+    float: right;
+}
+
+#hide-heart {
+    display: none;
+}
+
+@media print {
+    #hide-heart {
+        display: block;
+    }
+}
